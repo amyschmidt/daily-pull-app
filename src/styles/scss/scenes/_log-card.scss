@@ -1,0 +1,64 @@
+@import './mixins/desktop';
+@import './variables/colors';
+@import './variables/fonts';
+
+.LogCard-container {
+  padding-top: 30px !important;
+  text-align: center !important;
+  background-color: white !important;
+  color: black;
+  opacity: 0.8;
+  padding-bottom: 0px !important;
+}
+
+.LogCard-title {
+  font-family: $font-Raleway;
+  padding-bottom: 10px;
+}
+// .App-options {
+//   text-align: center;
+//   color: $color-pink;
+//   font-family: $font-serif;
+//   font-size: 30px;
+// }
+// .App-selection {
+//   text-align: center;
+//   color: $color-pink;
+//   font-family: $font-serif;
+//   font-size: 30px;
+// }
+
+.App-separator {
+  background-color: gray;
+  margin: 10px;
+  height: 2px;
+}
+
+// .App-submit {
+//   font-family: $font-sans;
+//   font-size: 20px;
+//   color: $color-white;
+//   background-color: $color-dark-magenta;
+//   border: none;
+//   border-radius: 30px;
+//   outline: none;
+//   width: 200px;
+//   padding: 10px;
+//   margin: 10px;
+// }
+
+// .App-submit:hover {
+//   opacity: 0.9;
+//   background-color: #eecbc7;
+// }
+
+// .App-submit:active {
+//   background-color: #eecbc7;
+//   box-shadow: 0 5px #e4a2a4;
+//   transform: translateY(3px);
+// }
+
+// .App-link {
+//   text-decoration: none;
+//   color: $color-white;
+// }

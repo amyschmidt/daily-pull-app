@@ -1,0 +1,21 @@
+@import './variables/colors';
+@import './variables/fonts';
+@import './mixins/desktop';
+
+.h1 {
+  color: $color-black;
+  font-family: $font-Karla;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 18px auto 10px;
+  text-align: center;
+  letter-spacing: -1px;
+  max-width: 600px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include desktop {
+    font-size: 32px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+@import './mixins/desktop';
+@import './variables/colors';
+@import './variables/fonts';
+
+.Card-name {
+  font-family: $font-Raleway;
+  font-size: 35px;
+  padding: 15px;
+}
+
+.Card-description {
+  font-family: $font-Open-Sans;
+  font-size: 16px;
+  color: black;
+}
+
+.Card-image {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}

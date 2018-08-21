@@ -1,0 +1,14 @@
+$desktop-width: 800px;
+$medium-width: 640px;
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin mediumViewport {
+  @media (min-width: $medium-width) {
+    @content;
+  }
+}

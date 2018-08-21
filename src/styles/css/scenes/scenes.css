@@ -1,0 +1,28 @@
+.Content {
+  padding: 5px; }
+
+.Login-form {
+  margin: 20px;
+  width: 400px; }
+
+.Login-button {
+  margin-top: 15px; }
+
+.LogCard-container {
+  padding-top: 30px !important;
+  text-align: center !important;
+  background-color: white !important;
+  color: black;
+  opacity: 0.8;
+  padding-bottom: 0px !important; }
+
+.LogCard-title {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 10px; }
+
+.App-separator {
+  background-color: gray;
+  margin: 10px;
+  height: 2px; }
+
+/*# sourceMappingURL=scenes.css.map */

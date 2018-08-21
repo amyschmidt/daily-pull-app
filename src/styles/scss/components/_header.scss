@@ -1,0 +1,17 @@
+@import './mixins/desktop';
+@import './variables/colors';
+@import './variables/fonts';
+
+.Nav-container {
+  background-color: white;
+  box-shadow: 0 0 4px white;
+  opacity: 0.7;
+}
+
+.Nav-container a {
+  color: black !important;
+}
+
+.Nav-container a:hover{
+  color: gray;
+}

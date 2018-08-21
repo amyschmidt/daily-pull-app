@@ -1,0 +1,74 @@
+@import './mixins/desktop';
+@import './variables/colors';
+@import './variables/fonts';
+
+.Suits-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.Suits {
+  font-family: $font-Open-Sans;
+  font-size: 25px;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.Direction-container {
+  color: white;
+  text-align: center;
+}
+
+.Direction {
+  font-family: $font-Open-Sans;
+  font-size: 16px;
+  color: white;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  width: 150px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.Cards-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.Cards {
+  font-family: $font-Open-Sans;
+  font-size: 16px;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.Cards:focus, .Direction:focus, .Suits:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.Cards:active, .Suits:active, .Direction:active {
+  box-shadow: 0 5px gray;
+  transform: translateY(2px);
+  outline: none !important;
+}
+
+.Suits-container button:hover {
+  color: $color-pale-pink;
+}
+
+.Cards-container button:hover {
+  color: $color-pale-pink;
+}
+
+.Direction-container button:hover {
+  background-color: $color-pale-pink;
+}
