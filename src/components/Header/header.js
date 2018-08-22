@@ -38,6 +38,9 @@ export default class Header extends React.Component<PropsT> {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+            <NavItem>
+                <NavLink href="/about">About</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href="/history">History</NavLink>
               </NavItem>

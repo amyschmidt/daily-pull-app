@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router'
 import Header from 'components/Header'
 import NotFoundPage from 'components/not-found-page'
+import AboutPage from 'components/about-page'
 import { auth, provider, firestore } from 'data/firebase'
 
 class App extends React.Component {
@@ -57,6 +58,7 @@ class App extends React.Component {
               const Component = require('scenes/History').default
               return <Component {...renderProps} user={this.state.user} />
               }} />
+            <Route path="/about" component={AboutPage} />
             <Route path="/" component={renderProps => {
               const Component = require('scenes/LogCard').default
               return <Component {...renderProps} user={this.state.user} />
