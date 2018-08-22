@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { Jumbotron, Container } from 'reactstrap';
-import { CardT, LogT } from 'types'
+import { CardT } from 'types'
 import Svg from 'components/svg'
-import cx from 'classnames'
 
 type PropsT = {
   card: CardT,
@@ -27,46 +25,6 @@ class TarotCard extends Component<PropsT> {
           </div>
 
         )}
-        
-           {/*{this.props.direction === 'upright' ? (
-            <div>
-              <div className="Card-upright">{this.props.card.upright}</div>
-              <div className="Card-title">Keywords</div>
-              {this.props.card.keywords.upright.map(keyword => (
-                <div className="Card-keyword">{keyword}</div>
-              ))}
-            </div>
-          ) : (
-            <div>
-              <div className="Card-reversed">{this.props.card.reversed}</div>
-              <div className="Card-title">Keywords</div>
-              {this.props.card.keywords.reversed.map(keyword => (
-                <div className="Card-keyword">{keyword}</div>
-              ))}
-            </div>
-          )}
-         {this.props.card.suit_keywords && (
-            <div>
-              <div className="Card-title">Suit</div>
-              {this.props.card.suit_keywords.map(suit => (
-                <div className="Card-keyword">{suit}</div>
-              ))}
-            </div>
-          )}
-          {this.props.card.card_keywords && (
-            <div>
-              <div className="Card-title">Card</div>
-              {this.props.card.card_keywords.map(card => (
-                <div className="Card-keyword">{card}</div>
-              ))}
-            </div>
-          )}
-
-          <div className="Card-title">Element</div>
-          <div className="Card-keyword">{this.props.card.element}</div>
-          <div className="Card-title">Astrology</div>
-          <div className="Card-keyword">{this.props.card.astrology}</div> 
-        </div> */}
       </div>
     )
   }

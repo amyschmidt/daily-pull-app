@@ -1,3 +1,38 @@
-// .Details-container {
-//   text-align: center;
-// }
+.CardDetails-container {
+  padding-top: 30px !important;
+  text-align: center !important;
+  background-color: white !important;
+  color: black;
+  opacity: 0.8;
+  padding-bottom: 0px !important;
+}
+
+.CardDetails-image {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.CardDetails-name {
+  font-family: $font-Raleway;
+  font-size: 35px;
+  padding: 15px;
+}
+
+.CardDetails-description {
+  font-family: $font-Open-Sans;
+  font-size: 16px;
+  color: black;
+}
+
+.CardDetails-heading {
+  font-family: $font-Open-Sans;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.CardDetails-keyword {
+  font-family: $font-Open-Sans;
+  font-size: 14px;
+  color: black;
+}

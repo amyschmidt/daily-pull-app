@@ -1,80 +1,73 @@
-// import React, { Component } from 'react'
-// import { CardT } from 'data/types'
-// import Svg from 'components/svg'
-// import { tarotCardsRef } from 'config/firebase'
-// import { Link } from 'react-router-dom'
+import React, { Component } from 'react'
+import { CardT } from 'types'
+import { ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
+import { firestore } from 'data/firebase'
 
-// type StateT = {
-//   cards: Array<CardT>,
-//   dates: Array<string>,
-// }
+type StateT = {
+  cards: Array<CardT>,
+}
 
-// class History extends Component<PropsT, StateT> {
-//   state = {
-//     cards: [],
-//     dates: [],
-//   }
+class History extends Component<PropsT, StateT> {
+  state = {
+    cards: [],
+  }
 
-//   componentDidMount() {
-//     tarotCardsRef.orderByKey().on('value', snapshot => {
-//       console.log('snapshot', snapshot.val())
-//       const items = snapshot.val()
-//       const newState = []
-//       for (const item in items) {
-//         newState.push({
-//           date: items[item].date,
-//           description: items[item].description,
-//           direction: items[item].direction,
-//           name: items[item].name,
-//           reversed: items[item].reversed,
-//           upright: items[item].upright,
-//           keywords: items[item].keywords,
-//           img_asset: items[item].img_asset,
-//         })
-//       }
-//       this.setState({ cards: newState })
-//     })
-//   }
+  componentDidMount() {
+    if (this.props.user) {
+      const docRef = firestore.collection('users').doc(this.props.user.email).collection('tarotLog')
+      const newState = []
 
-//   getCard = () => {
-//     console.log('cards', this.state.cards)
-//   }
+      var that = this;
+      docRef.get().then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            const item = doc.data().data
+            newState.push({
+              date: item.date,
+              description: item.description,
+              direction: item.direction,
+              name: item.name,
+              reversed: item.reversed,
+              upright: item.upright,
+              keywords: item.keywords,
+              img_asset: item.img_asset,
+              astrology: item.astrology,
+              element: item.element
+            })
+        })
+        that.setState({ cards: newState })
+      })
+    }
+  }
 
-//   getCardName = () => {
-//     for (const card in this.state.cards) {
-//     }
-//   }
+  render() {
+    const { cards } = this.state
+    return cards.length > 0 ? (
+      <ListGroup>
+       {cards.map(card => (
+        <ListGroupItem className="History-container">
+          <ListGroupItemHeading className="History-heading">{card.date}</ListGroupItemHeading>
+          {card.direction === 'upright' ? (
+            <ListGroupItemText className="History-name" tag="a" href={`/${card.img_asset}/${card.direction}`}>
+              {card.name}
+            </ListGroupItemText>
+          ) : (
+            <ListGroupItemText className="History-name" tag="a" href={`/${card.img_asset}/${card.direction}`}>
+              {card.name} Reversed
+            </ListGroupItemText>
+          )
+          }
+        </ListGroupItem>
+        ))}
+        </ListGroup>
+    ) :
+    (
+      <ListGroup>
+        <ListGroupItem className="History-container">
+        <ListGroupItemHeading className="History-heading">There are no tarot cards logged</ListGroupItemHeading>
+        </ListGroupItem>
+      </ListGroup>
+    )
+  }
+}
 
-//   render() {
-//     return (
-//       <div className="History-container">
-//         {this.state.cards.map(card => (
-//           <div>
-//             <div className="History-date">{card.date}</div>
-//             {card.direction === 'upright' ? (
-//               <button className="History-name">
-//                 <Link
-//                   className="History-link"
-//                   to={`/history/${card.img_asset}/${card.direction}`}
-//                 >
-//                   {card.name}
-//                 </Link>
-//               </button>
-//             ) : (
-//               <button className="History-name">
-//                 <Link
-//                   className="History-link"
-//                   to={`/history/${card.img_asset}/${card.direction}`}
-//                 >
-//                   {card.name} Reversed
-//                 </Link>
-//               </button>
-//             )}
-//           </div>
-//         ))}
-//       </div>
-//     )
-//   }
-// }
-
-// export default History
+export default History

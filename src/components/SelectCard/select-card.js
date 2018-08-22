@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import * as tarot from 'tarot.json'
-import { SuitT, CardT } from 'types'
+import { SuitT } from 'types'
 
 type PropsT = {
   chooseCard: () => mixed,

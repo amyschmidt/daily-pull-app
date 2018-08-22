@@ -88,6 +88,9 @@ const svgs = {
   'two-of-swords': () =>
     import(/* webpackChunkName: 'two-of-swords' */
     '!!raw-loader!svgo-loader!assets/two-of-swords.svg'),
+  'seven-of-swords': () =>
+    import(/* webpackChunkName: 'seven-of-swords' */
+    '!!raw-loader!svgo-loader!assets/seven-of-swords.svg'),
   'nine-of-swords': () =>
     import(/* webpackChunkName: 'nine-of-swords' */
     '!!raw-loader!svgo-loader!assets/nine-of-swords.svg'),

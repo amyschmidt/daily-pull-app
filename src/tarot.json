@@ -914,17 +914,21 @@
         "element": "air"
       },
       {
-        "name": "seven of swords",
-        "description": "",
-        "upright": "",
-        "reversed": "",
+        "name": "Seven of Swords",
+        "img_asset": "seven-of-swords",
+        "description": "In the Seven of Swords card, there is a man that is seen running away sneakily from a camp of some sort, while carrying five swords in his hands. Behind him, two other swords are on standing on the ground. From this image, we can deduce that the Seven of Swords is about stealth, getting away with something, deception or betrayal. The expression on the man’s face shows quite a bit of confidence, and he seems to be sure of his success on this mission of stealing the swords. Unfortunately for him though, on the left there seems to be a group of soldiers who have discovered the theft and one soldier is actually raising a flag or a weapon as if to signal his pursuit.",
+        "upright": "The Seven of Swords in general, is said to be about betrayal and deception. When you get this card, it may imply that you or someone else in your life is having difficulty getting away with something. There are instances when we are forced to be sneaky, hoping that we will not be discovered. When we are found out, we have to face the consequences - whether it's embarrassment, punishment, or worse. Sometimes this happens when there are instances when you had to think on your feet, and did something that was somewhat shrewd and out of character. Now there is a danger of the secret coming out. You may be tempted to sneak away from somewhere, indicating a situation that is no longer working as expected. Instead of dealing with it, you choose to sneak away and hope that you will go unnoticed. Perhaps you were hoping that this issue would just resolve itself over time, and you've neglected it - leaving it to only grow and get worse. The big question, when looking at the Seven of Swords, is whether escaping will solve this problem that you are facing. While you might be thinking that you have gotten away, you discover that the situation has cornered you and you are found out as you are trying to escape. There are instances when the Seven of Swords may indicate the willingness to go solo. You may have the urge to explore and discover some things on your own. This can be an effective approach if you want to assert your independence and bypass group agreement. The Seven of Swords symbolism may be encouraging you to go on this path; sometimes innovation comes from a rogue genius.",
+        "reversed": "The Seven of Swords reversed can have multiple meanings depending on the context of the other cards within the reading. It can suggest firstly a need to change your approach - the tactics you've been using are not working. While upright, this card can stand for a cunning victory attained by deception and trickery, the reversal can stand for either a more extreme version of such behavior. Or instead, a kind of renewal of conscience. You or someone in your circle may be deciding to unburden themselves with their guilt, and come clean about some piece of manipulation they have been involved in. Trust has been broken, but with a confession, you may be on the road to repairing it. There is a desire here to try and do things in a different way, one that is collaborative rather than independent.",
         "keywords": {
-          "upright": ["deception", "stealh", "turning a blind eye", "betrayal"],
-          "reversed": ["desire to reform", "breaking free", "turn a new leaf"]
+          "upright": ["Deception", "Stealth", "Turning a blind eye", "Betrayal"],
+          "reversed": ["Desire to reform", "Coming clean", "Turn a new leaf", "Rethinking approach"]
         },
-        "suit_keywords": ["logic", "ideas", "intellect"],
-        "card_keywords": [""],
-        "element": "air"
+        "Suit": "Swords",
+        "suit_keywords": ["Logic", "Ideas", "Intellect"],
+        "card": "Seven",
+        "card_keywords": ["Spirituality", "Wisdom", "Exploration"],
+        "astrology": "Gemini, Libra, Aquarius",
+        "element": "Air"
       },
       {
         "name": "eight of swords",

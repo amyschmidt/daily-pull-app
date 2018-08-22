@@ -2,10 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router'
 import Header from 'components/Header'
 import NotFoundPage from 'components/not-found-page'
-import LogCard from 'scenes/LogCard'
-import History from 'scenes/History'
-import CardDetails from 'scenes/CardDetails'
-import firebase, { auth, provider } from 'data/firebase'
+import { auth, provider, firestore } from 'data/firebase'
 
 class App extends React.Component {
   state = {
@@ -24,6 +21,16 @@ class App extends React.Component {
       this.setState({
         user,
       })
+      firestore.collection("users").doc(user.email).set({
+        displayName: user.displayName,
+        email: user.email
+      })
+      .then(function() {
+          console.log("Document written");
+      })
+      .catch(function(error) {
+          console.error("Error adding document: ", error);
+      });  
     })
   }
    handleLogout = () => {
@@ -42,9 +49,18 @@ class App extends React.Component {
         />
         <div className="Content">
           <Switch>
-            {/* <Route path="/history/:card/:direction" component={CardDetails} /> */}
-            {/* <Route path="/history" component={History} /> */}
-            <Route path="/" component={LogCard} />
+            <Route path="/:card/:direction" component={renderProps => {
+              const Component = require('scenes/CardDetails').default
+              return <Component {...renderProps} user={this.state.user} />
+              }} />
+            <Route path="/history" component={renderProps => {
+              const Component = require('scenes/History').default
+              return <Component {...renderProps} user={this.state.user} />
+              }} />
+            <Route path="/" component={renderProps => {
+              const Component = require('scenes/LogCard').default
+              return <Component {...renderProps} user={this.state.user} />
+              }} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

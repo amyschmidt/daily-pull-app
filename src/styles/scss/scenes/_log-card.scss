@@ -28,24 +28,44 @@
 //   font-size: 30px;
 // }
 
-.App-separator {
+.LogCard-separator {
   background-color: gray;
   margin: 10px;
   height: 2px;
 }
 
-// .App-submit {
-//   font-family: $font-sans;
-//   font-size: 20px;
-//   color: $color-white;
-//   background-color: $color-dark-magenta;
-//   border: none;
-//   border-radius: 30px;
-//   outline: none;
-//   width: 200px;
-//   padding: 10px;
-//   margin: 10px;
-// }
+.LogCard-submit-container {
+  color: white;
+  text-align: center;
+}
+
+.LogCard-submit {
+  font-family: $font-Open-Sans;
+  font-size: 20px;
+  color: $color-white;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.LogCard-submit-container button:hover {
+  background-color: $color-pale-pink;
+}
+
+.LogCard-submit:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.LogCard-submit:active {
+  box-shadow: 0 5px gray;
+  transform: translateY(2px);
+  outline: none !important;
+}
 
 // .App-submit:hover {
 //   opacity: 0.9;

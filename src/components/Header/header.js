@@ -39,14 +39,14 @@ export default class Header extends React.Component<PropsT> {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
+                <NavLink href="/history">History</NavLink>
+              </NavItem>
+              <NavItem>
                 {loggedIn ? (
-                  <NavLink href="#" onClick={() => chooseLogout()}>Logout</NavLink>
+                  <NavLink href="/" onClick={() => chooseLogout()}>Logout</NavLink>
                 ) : (
                   <NavLink href="#" onClick={() => chooseLogin()}>Login</NavLink>
                 )}
-              </NavItem>
-              <NavItem>
-                <NavLink href="/history">History</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

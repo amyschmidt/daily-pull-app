@@ -2,13 +2,10 @@ import React, { Component } from 'react'
 import SelectCard from 'components/SelectCard'
 import TarotCard from 'components/TarotCard'
 import { CardT, LogT } from 'types'
-// import { Actions as LogActions } from 'data/tarotCards'
-// import { onStoreTransition } from 'data/utils'
-// import { connect } from 'react-redux'
 import * as tarot from 'tarot.json'
-import { Link } from 'react-router-dom'
 import { Jumbotron, Container } from 'reactstrap';
 import cx from 'classnames'
+import { firestore } from 'data/firebase'
 
 const months = [
   'January',
@@ -53,7 +50,6 @@ class LogCard extends Component<StateT> {
     const date = ('0' + today.getDate()).slice(-2)
     const month = ('0' + (today.getMonth() + 1)).slice(-2)
     const dateString = `${today.getFullYear()}-${month}-${date}`
-    console.log('dateString', dateString)
     return dateString
   }
 
@@ -61,7 +57,15 @@ class LogCard extends Component<StateT> {
     data.date = this.todaysDate()
     data.key = this.dateKey()
     data.direction = this.state.direction
-    // this.props.logCard(data)
+    firestore.collection('users').doc(this.props.user.email).collection('tarotLog').doc(data.key).set({
+      data
+    })
+    .then(function() {
+        console.log("Document successfully written!")
+    })
+    .catch(function(error) {
+        console.error("Error writing document: ", error)
+    })
   }
 
   handleChooseCard = (card: CardT, direction: string) => {
@@ -75,26 +79,6 @@ class LogCard extends Component<StateT> {
 
   render() {
     return (
-
-      //     {this.props.user && (
-      //       <div>
-      //         <button
-      //           className="App-submit"
-      //           onClick={() => this.handleSubmit(this.state.card)}
-      //         >
-      //           Log today's card
-      //         </button>
-      //         <button className="App-submit" onClick={() => this.showHistory()}>
-      //           <Link className="App-link" to="/history">
-      //             View history
-      //           </Link>
-      //         </button>
-      //       </div>
-      //     )}
-      //     <div className="App-separator" />
-      //     <SelectCard chooseCard={this.handleChooseCard} />
-      //   </div>
-      // </div>
       <div>
       <Jumbotron fluid className="LogCard-container">
         <Container fluid>
@@ -106,7 +90,17 @@ class LogCard extends Component<StateT> {
           />
         </Container>
       </Jumbotron>
-      <div className="App-separator" />
+      {this.props.user && (
+        <div className="LogCard-submit-container">
+          <button
+            className="LogCard-submit"
+            onClick={() => this.handleSubmit(this.state.card)}
+          >
+            Log today's card
+          </button>
+        </div>
+      )}
+      <div className="LogCard-separator" />
       <SelectCard chooseCard={this.handleChooseCard} />
     </div>
     )
