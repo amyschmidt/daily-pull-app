@@ -8,13 +8,19 @@ import {
   NavItem,
   NavLink } from 'reactstrap';
 
-export default class Header extends React.Component {
+type PropsT = {
+  loggedIn: boolean,
+  chooseLogin: () => mixed,
+  chooseLogout: () => mixed,
+}
+
+export default class Header extends React.Component<PropsT> {
   constructor(props) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
   toggle() {
@@ -22,7 +28,9 @@ export default class Header extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
+    const { loggedIn, chooseLogin, chooseLogout } = this.props
     return (
       <div>
         <Navbar light className="Nav-container" expand="md">
@@ -30,8 +38,12 @@ export default class Header extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-            <NavItem>
-                <NavLink href="/login">Login</NavLink>
+              <NavItem>
+                {loggedIn ? (
+                  <NavLink href="#" onClick={() => chooseLogout()}>Logout</NavLink>
+                ) : (
+                  <NavLink href="#" onClick={() => chooseLogin()}>Login</NavLink>
+                )}
               </NavItem>
               <NavItem>
                 <NavLink href="/history">History</NavLink>
