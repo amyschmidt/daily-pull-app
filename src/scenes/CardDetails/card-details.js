@@ -34,7 +34,7 @@ class CardDetails extends Component<StateT> {
         <Jumbotron fluid className="CardDetails-container">
           <Container fluid>
             <Svg className="CardDetails-image" filename={card.img_asset} />
-            {this.props.direction === 'upright' ? (
+            {this.props.match.params.direction === 'upright' ? (
               <div>
               <h3 className="Card-name">{card.name}</h3>
               <p className="CardDetails-description">{card.upright}</p>

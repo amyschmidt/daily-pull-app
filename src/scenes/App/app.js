@@ -35,30 +35,8 @@ class App extends React.Component {
           console.error("Error adding document: ", error);
       });  
     })
-
-    // auth.getRedirectResult().then(function(result) {
-    //   // The signed-in user info.
-    //   var user = result.user;
-    //   this.setState({
-    //     user,
-    //   })
-    //   firestore.collection("users").doc(user.email).set({
-    //     displayName: user.displayName,
-    //     email: user.email
-    //   })
-    //   .then(function() {
-    //       console.log("Document written");
-    //   })
-    //   .catch(function(error) {
-    //       console.error("Error adding document: ", error);
-    //   });  
-    // }).catch(function(error) {
-    //   // Handle Errors here.
-    //   var errorCode = error.code;
-    //   var errorMessage = error.message;
-    //   console.error("Error loggin in ", error.message);
-    // });
   }
+  
    handleLogout = () => {
     auth.signOut().then(() => {
       this.setState({ user: null })

@@ -12,7 +12,7 @@ class History extends Component<PropsT, StateT> {
     cards: [],
   }
 
-  componentDidMount() {
+  componentWillMount() {
     if (this.props.user) {
       const docRef = firestore.collection('users').doc(this.props.user.email).collection('tarotLog')
       const newState = []

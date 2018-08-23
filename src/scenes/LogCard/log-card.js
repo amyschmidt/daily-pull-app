@@ -27,6 +27,7 @@ type StateT = {
   date: Date,
   cards: Array<Object>,
   direction: string,
+  hasLoggedToday: bool,
 }
 
 class LogCard extends Component<StateT> {
@@ -35,6 +36,35 @@ class LogCard extends Component<StateT> {
     cards: [],
     date: Date(),
     direction: 'upright',
+    hasLoggedToday: false,
+  }
+
+  componentWillMount() {
+    this.checkForLog()
+  }
+
+  checkForLog = () => {
+    if (this.props.user) {
+      const docRef = firestore.collection('users').doc(this.props.user.email).collection('tarotLog').doc(this.dateKey())
+
+      var that = this;
+      docRef.get().then(function(doc) {
+        if (doc.exists) {
+          that.setState({
+            hasLoggedToday: true
+          })
+        } else {
+            that.setState({
+              hasLoggedToday: false
+            })
+            console.log("No such document!");
+        }
+      }).catch(function(error) {
+        that.setState({
+          hasLoggedToday: false
+        })
+      });
+    }
   }
 
   todaysDate = () => {
@@ -66,6 +96,7 @@ class LogCard extends Component<StateT> {
     .catch(function(error) {
         console.error("Error writing document: ", error)
     })
+    this.checkForLog()
   }
 
   handleChooseCard = (card: CardT, direction: string) => {
@@ -78,6 +109,7 @@ class LogCard extends Component<StateT> {
   showHistory = () => {}
 
   render() {
+    const logSubmitText = this.state.hasLoggedToday ? "Change today's card" : "Log today's card"
     return (
       <div>
       <Jumbotron fluid className="LogCard-container">
@@ -96,7 +128,7 @@ class LogCard extends Component<StateT> {
             className="LogCard-submit"
             onClick={() => this.handleSubmit(this.state.card)}
           >
-            Log today's card
+            {logSubmitText}
           </button>
         </div>
       )}
