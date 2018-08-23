@@ -106,7 +106,18 @@ class LogCard extends Component<StateT> {
     })
   }
 
-  showHistory = () => {}
+  handleRandom = () => {
+    const suitIndex = Math.floor((Math.random() * 4));
+    const directionIndex = Math.floor((Math.random() * 1));
+    const direction = directionIndex === 0 ? "upright" : "reversed"
+    if (suitIndex === 0) {
+      const cardIndex = Math.floor((Math.random() * 21))
+      this.handleChooseCard(tarot[0][suitIndex].cards[cardIndex], direction)
+    } else {
+      const cardIndex = Math.floor((Math.random() * 13))
+      this.handleChooseCard(tarot[0][suitIndex].cards[cardIndex], direction)
+    }
+  }
 
   render() {
     const logSubmitText = this.state.hasLoggedToday ? "Change today's card" : "Log today's card"
@@ -129,6 +140,12 @@ class LogCard extends Component<StateT> {
             onClick={() => this.handleSubmit(this.state.card)}
           >
             {logSubmitText}
+          </button>
+          <button
+            className="LogCard-submit"
+            onClick={() => this.handleRandom()}
+          >
+            Choose a random card
           </button>
         </div>
       )}
