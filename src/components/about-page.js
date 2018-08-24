@@ -6,10 +6,8 @@ const AboutPage = () => (
   <div className="Main">
     <PageHeader>About Daily Pull</PageHeader>
     <PageDescription>
-      Daily Pull is an app for tracking your daily tarot card pull. 
-      Using a physical or digital tarot deck, log your chosen card every day 
-      and view your history to learn a little more about each card. 
-      Daily Pull is meant to be used by anyone, from beginners who want to learn more about tarot
+      Daily Pull is an app for tracking your daily tarot card pull.  
+      Daily Pull is for anyone, from beginners who want to learn more about tarot
       to advanced tarot readers who want to track the patterns of their pulls. 
     </PageDescription>
     <PageDescription>

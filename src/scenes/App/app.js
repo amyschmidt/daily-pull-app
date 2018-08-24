@@ -4,6 +4,7 @@ import Header from 'components/Header'
 import NotFoundPage from 'components/not-found-page'
 import AboutPage from 'components/about-page'
 import { auth, provider, firestore } from 'data/firebase'
+import HowToPage from 'components/how-to-page';
 
 class App extends React.Component {
   state = {
@@ -36,7 +37,7 @@ class App extends React.Component {
       });  
     })
   }
-  
+
    handleLogout = () => {
     auth.signOut().then(() => {
       this.setState({ user: null })
@@ -62,6 +63,7 @@ class App extends React.Component {
               return <Component {...renderProps} user={this.state.user} />
               }} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/how-to" component={HowToPage} />
             <Route path="/" component={renderProps => {
               const Component = require('scenes/LogCard').default
               return <Component {...renderProps} user={this.state.user} />
