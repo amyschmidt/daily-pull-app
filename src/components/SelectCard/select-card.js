@@ -31,7 +31,7 @@ class SelectCard extends Component<PropsT, StateT> {
 
   render() {
     return (
-      <div>
+      <div className="SelectCard-container">
         <div className="Suits-container">
           {tarot.map(suit => (
             <button className="Suits" onClick={() => this.updateSuit(suit)}>

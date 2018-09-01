@@ -11,8 +11,8 @@ const AboutPage = () => (
       to advanced tarot readers who want to track the patterns of their pulls. 
     </PageDescription>
     <PageDescription>
-      Daily Pull is made by <a href="https://medium.com/@ammmye">Amy Schmidt</a> using tarot information aggregated from <a href="https://www.biddytarot.com/"> Biddy Tarot </a> 
-      and <a href="https://labyrinthos.co/">Labyrinthos</a>.
+      Daily Pull is made by <a href="https://medium.com/@ammmye">Amy Schmidt</a>. 
+      The images are from the Rider-Waite-Smith Tarot Card deck and the descriptions are written by Amy Schmidt.
     </PageDescription>
   </div>
 )

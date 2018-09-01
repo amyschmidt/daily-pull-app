@@ -12,6 +12,8 @@ const HowToPage = () => (
       and to track patterns in the cards you pull over time. 
     </PageDescription>
     <PageDescription>
+      First, shuffle your tarot cards. 
+      When you feel ready, pull the top card.
       Read the description for the card you pull each day and reflect on how it might relate to your life 
       and what you may currently be experiencing. It may give you guidance on how you should handle a situation you 
       are dealing with, it may affirm something you've been working towards, and it even may warn you about what's to come. 
