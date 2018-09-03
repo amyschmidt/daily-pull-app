@@ -523,13 +523,13 @@
         "description":
           "",
         "upright":
-          "To see the Two of Cups is an indication of a partnership that is built on the union of forces, a strong connection and a balanced and equal partnership. The exchange of cups suggest that each party's emotions are intertwined with the other's, and each participant's feelings have profound affects on the other. A strong pair is indicated here, the joy of two becoming one. When it comes to work, you may notice that the people around you will start to appreciate you more. There is a mutual respect here, meaning you will also be more comfortable in your workplace. If you are looking for new job opportunities, this card may be a good sign. In terms of love, the card represents commitment, a balanced relationship, and love. But this does not simply mean that you will no longer need to nurture your love to make it last. The card only signifies that true love and affection is present. In your finances, the Two of Cups is associated with fairness and balance. This means that you are currently financially capable and you have the right amount of money to deal with your obligations. In relation with your health, people who are currently facing some health issues need to look for a practitioner that they will be comfortable working with and whom they can trust. In spirituality, it is a call for you to be more endearing and loving towards the others. You are receiving positive energy from the universe, and you need to share that energy.",
+          "The Two of Cups signals a union of some kind. In this partnership, there is a mutual respect. There is balance and fairness here, each appreciates the other for what they are. This card may be a sign that you will find a new job or a new business opportunity. It may be related to a personal relationship you have. Regardless, the Two of Cups is about two individuals putting trust in one another and treating each other with fairness and respect. They balance each other out.",
         "reversed":
-          "When reversed, the Two of Cups can mean that the balance that was once there is broken. This balance was an integral part of keeping the individuals together, but to break it is to create disconnection and discord. The negative energy of two forces is present, and instead of them joining or attracting, they seem to repel each other. You may be finding that certain small details that were not problems before are coming into play, signaling that one party may have resentments. A line of communication that allowed you and the other party to openly talk about disagreements has been cut off, only worsening the cycle of resentment and imbalance.Be the first to open up, and you may find the problem much easier to repair than you thought it would be.",
+          "The Two of Cups reversed may mean there is something wrong in one of your partnerships, whether it be a personal or professional relationship. There may have been trust and respect that has been broken. You're experiencing a disconnect with this person and the energy that was once positive between you two has turned negative. There may be an imbalance of power now that was not always present in your relationship. There may be a miscommunication or lack of communication happening. How can you mend this partnership and break the cycle of resentment and negativity? It may be time to open up and communicate how you really feel.",
         "keywords": {
-          "upright": ["Unity", "Partnerships", "Attraction", "Relationships"],
+          "upright": ["Unity", "Partnerships", "Attraction", "Balance"],
           "reversed": [
-            "Imbalance in relationship",
+            "Imbalance",
             "Lack of harmony",
             "Tension",
             "Broken communication"
@@ -543,62 +543,61 @@
         "element": "Water"
       },
       {
-        "name": "three of cups",
-        "img_asset": "",
+        "name": "Three of Cups",
+        "img_asset": "three-of-cups",
         "description": "",
-        "upright": "",
-        "reversed": "",
+        "upright": "The Three of Cups signals a time of happiness in your life. This is a time to spend with family and friends. Appreciate the loving relationships you have in your life and maybe reach out to old friends or friends you may have lost touch with at this time. There may be a celebration happening soon that involves your loved ones. This card may also signify that times of difficulty in your social life are coming to an end. If you've been having issues with family members or friends, these issues may be resolved soon. Make sure to support those in your community and put aside your differences to come together.",
+        "reversed": "The Three of Cups reversed signals a lack of harmony with your social life. You may be too busy to find time for friends. You may have lost touch with people you truly care about and want in your life. You may be growing apart from someone you've been close with for a long time. You even may have too many friends and it may be causing chaos and harm in your life. Often groups of friends can suffer from too much gossip and group think. This is a time to reflect on who you have in your life. Who is bringing you joy and helping you grow as a person? Who may be keeping you stagnant or too self-reliant on them or the group? If the people in your life do not support you as an individual to grow and find your own way, they may not be the right people to spend your time with. Threes are all about growth and expression so if your personal relationships are blocking your growth and creativity, it is time to reevaluate.",
         "keywords": {
-          "upright": ["celebration", "friendship", "community", "happiness"],
-          "reversed": ["herd mentality", "conformity", "solitude"]
+          "upright": ["Celebration", "Friendship", "Community"],
+          "reversed": ["Herd mentality", "Conformity", "Solitude"]
         }, 
         "suit": "Cups",
         "suit_keywords": ["Emotions", "Feelings", "Relationships"],
         "card": "Three",
-        "card_keywords": [""],
+        "card_keywords": ["Growth", "Creativity", "Expression"],
         "astrology": "Cancer, Scorpio, Pisces",
         "element": "Water"
       },
       {
-        "name": "four of cups",
-        "img_asset": "",
+        "name": "Four of Cups",
+        "img_asset": "four-of-cups",
         "description": "",
-        "upright": "",
-        "reversed": "",
+        "upright": "The Four of Cups may represents a feeling of being discouraged or or unmotivated. You may be feeling apathetic, like your life is at a standstill. The Four of Cups isn't necessarily about what is happening in your life, but how you are viewing it. You are overlooking the positive in your life and only focusing on how things aren't as you wish they were. The Four of Cups is a signal to self-evaluate and redefine your passions. What you need may be right in front of you, you just have to stop focusing on what isn't there and focus on what is.",
+        "reversed": "The Four of Cups reversed may mean you've had a burst of energy. You may have been feeling apathetic, but something in the distance is giving you hope. You know there is a new opportunity waiting for you and you are prepared to go after it. It may not be exactly what you'd hoped for but you are realizing that life doesn't always go as expected. You will find joy from seeing the beauty life has to offer.",
         "keywords": {
           "upright": [
-            "apathy",
-            "contemplation",
-            "re-evaluation",
-            "disconnectedness"
+            "Apathy",
+            "Contemplation",
+            "Reevaluation",
+            "Disconnectedness"
           ],
           "reversed": [
-            "boredom",
-            "missed opporunity",
-            "aloofness",
-            "taking for granted"
+            "Sudden Awareness",
+            "Choosing Happiness",
+            "Acceptance"
           ]
         },
         "suit": "Cups",
         "suit_keywords": ["Emotions", "Feelings", "Relationships"],
         "card": "Four",
-        "card_keywords": [""],
+        "card_keywords": ["Stability", "Application", "Formation"],
         "astrology": "Cancer, Scorpio, Pisces",
         "element": "Water"
       },
       {
-        "name": "five of cups",
-        "img_asset": "",
+        "name": "Five of Cups",
+        "img_asset": "five-of-cups",
         "description": "",
-        "upright": "",
-        "reversed": "",
+        "upright": "Five of Cups represents disappointment. The depiction of this card shows someone looking in sadness at three cups that have fallen over and had their contents spilled out. You may be feeling a loss or failure and you are having trouble moving on from the disappointment you feel. You may be dwelling in self-pity and focusing too much on the past. The Five of Cups also depicts two cups still standing upright, which symbolizes the good that still exists. You haven't lost everything yet you choose to focus on the past, rather than the future. Not all is lost, but if you refuse to let go of what is lost, you may miss out on the opportunities you still have.",
+        "reversed": "The Five of Cups reversed may signify you are moving on from past regrets and disappointments. This card may mean you are finally accepting what has happened and are ready to move forward with your life. You have also reflected on what went wrong in order to learn from your mistakes and do better in the future. You may have even gained new perspective and strength from experiencing the loss and failure.",
         "keywords": {
-          "upright": ["loss", "regret", "disappointment", "grief", "hope"],
+          "upright": ["Loss", "Regret", "Disappointment", "Hope", "New opportunity"],
           "reversed": [
-            "moving on",
-            "acceptance",
-            "finding peace",
-            "forgiveness"
+            "Moving on",
+            "Acceptance",
+            "Finding peace",
+            "Forgiveness"
           ]
         },
         "suit": "Cups",
@@ -609,42 +608,41 @@
         "element": "Water"
       },
       {
-        "name": "six of cups",
-        "img_asset": "",
+        "name": "Six of Cups",
+        "img_asset": "six-of-cups",
         "description": "",
-        "upright": "",
-        "reversed": "",
+        "upright": "The Six of Cups is a card of nostalgia. You may be experiencing strong memories or longing for the past. You view your childhood or younger years as a time of happiness or a time when you didn't know the pain that you do now. You may feel like the past, or the familiar, is the happiest you will ever be. The Six of Cups welcomes memories but warns you that you must not live in the past. You may be only remembering the joy of your past and not realizing that all times come with struggles. Things may have seemed simpler than they are now, but regardless, you must live in the present.",
+        "reversed": "The Six of Cups reversed means that you are too engrossed in the past. You shaped your entire life based on the joy or trauma of your past and it may be time to let go. While the familiar provides comfort to you, it also prevents growth. Learn from the past, but do not let it define you. The Six of Cups may also signify feeling disconnected from your past. Who you are now is vastly different than who you may have wanted to be, and that is tough to grapple with. Forging a new path is not always a bad thing but make sure you have not lost your way or let harsh realities decide everything for you.",
         "keywords": {
-          "upright": ["reunion", "nostalgia", "memories", "innocence"],
+          "upright": ["Familiarity", "Nostalgia", "Memories", "Innocence"],
           "reversed": [
-            "stuck in the past",
-            "naivety",
-            "unrealistic expectations",
-            "resisting change"
+            "Stuck in the past",
+            "Unrealistic expectations",
+            "Resisting change"
           ]
         },
         "suit": "Cups",
         "suit_keywords": ["Emotions", "Feelings", "Relationships"],
         "card": "Six",
-        "card_keywords": [""],
+        "card_keywords": ["Cooperation", "Harmony", "Compassion"],
         "astrology": "Cancer, Scorpio, Pisces",
         "element": "Water"
       },
       {
-        "name": "seven of cups",
-        "img_asset": "",
+        "name": "Seven of Cups",
+        "img_asset": "seven-of-cups",
         "description": "",
-        "upright": "",
-        "reversed": "",
+        "upright": "The Seven of Cups may mean that you have many choices ahead of you. You need to be careful when making decisions. It is important to be realistic and practical in what you choose to do. This card signifies there may be choices that seem to good to be true and that any short cuts you try to take may end up hurting you long term. When you have big decisions to make, the best idea is to weigh the advantages and disadvantages of each choice. No matter how good some options may seem, there are always downsides to any decision and it is important you recognize what those are.",
+        "reversed": "The Seven of Cups reversed indicates there may be temptations you have to avoid. If you only see the good in things, you leave yourself open to be duped or tricked into doing something you didn't agree to. Make sure to make choices with a clear mind at this time, don't get distracted by fantasies. This card is a sign that it is time to be realistic.",
         "keywords": {
           "upright": [
-            "fantasy",
-            "illusion",
-            "choices",
-            "imagination",
-            "wishful thinking"
+            "Fantasy",
+            "Illusion",
+            "Choices",
+            "Imagination",
+            "Wishful thinking"
           ],
-          "reversed": ["temptation", "diversion", "confusion"]
+          "reversed": ["Temptation", "Diversion", "Confusion"]
         },
         "suit": "Cups",
         "suit_keywords": ["Emotions", "Feelings", "Relationships"],
@@ -1406,16 +1404,28 @@
         "element": "Earth"
       },
       {
-        "name": "king of pentacles",
+        "name": "King of Pentacles",
         "img_asset": "",
         "description": "",
-        "upright": "",
-        "reversed": "",
-        "keywords": [""],
+        "upright": "The King of Pentacles is a generous provider. He has found financial success which brings him stability and security. He is a fatherly figure who provides fr others and is quick to share his wealth with those around him. You may be experiencing this sort of financial success and abundance. You also may have someone in your life that is playing the role of the King of Pentacles to you. Someone who is a great support, they both shares wise advice and also provides what you need for your success.",
+        "reversed": "The reversed King of Pentacles can symbolize greed and indulgence. He is disconnected from his suit and has been paying too much attention on his own desires, rather than how he can provide to his community. This card reversed may also represent misguided views of success. If you only want success and financial gain to be able to show off to others, you aren't looking for true success. Don't think about how financial success can benefit you with material goods, but focus on how it can help you find the security and stability you need, as well as how it can help you help others.",
+        "keywords": {
+          "upright": [
+            "Abundance",
+            "Power",
+            "Security"
+          ],
+          "reversed": [
+            "Greed",
+            "Indulgence",
+            "Sensuality",
+            "Miserly"
+          ]
+        },
         "suit": "Pentacles",
         "suit_keywords": ["Earthly", "Material", "Sensual"],
         "card": "King",
-        "card_keywords": [""],
+        "card_keywords": ["The Master", "The Executor", "He controls and reigns supreme over his suit, bringing its power to action"],
         "astrology": "Taurus, Virgo, Capricorn",
         "element": "Earth"
       }
