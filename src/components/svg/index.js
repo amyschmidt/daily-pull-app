@@ -81,6 +81,21 @@ const svgs = {
   'two-of-cups': () =>
     import(/* webpackChunkName: 'two-of-cups' */
     '!!raw-loader!svgo-loader!assets/two-of-cups.svg'),
+  'three-of-cups': () =>
+    import(/* webpackChunkName: 'three-of-cups' */
+    '!!raw-loader!svgo-loader!assets/three-of-cups.svg'),
+  'four-of-cups': () =>
+    import(/* webpackChunkName: 'four-of-cups' */
+    '!!raw-loader!svgo-loader!assets/four-of-cups.svg'),
+  'five-of-cups': () =>
+    import(/* webpackChunkName: 'five-of-cups' */
+    '!!raw-loader!svgo-loader!assets/five-of-cups.svg'),
+  'six-of-cups': () =>
+    import(/* webpackChunkName: 'six-of-cups' */
+    '!!raw-loader!svgo-loader!assets/six-of-cups.svg'),
+  'seven-of-cups': () =>
+    import(/* webpackChunkName: 'seven-of-cups' */
+    '!!raw-loader!svgo-loader!assets/seven-of-cups.svg'),
   //swords
   'ace-of-swords': () =>
     import(/* webpackChunkName: 'ace-of-swords' */
